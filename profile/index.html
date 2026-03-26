@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль пользователя</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Профиль пользователя</h1>
+
+        <div class="profile-section">
+            <div class="form-section">
+                <h2>Редактирование профиля</h2>
+                <form id="profileForm">
+                    <div class="form-group">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" placeholder="Введите ваше имя">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="age">Возраст:</label>
+                        <input type="number" id="age" name="age" placeholder="Введите ваш возраст">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="city">Город:</label>
+                        <input type="text" id="city" name="city" placeholder="Введите ваш город">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="hobby">Хобби:</label>
+                        <input type="text" id="hobby" name="hobby" placeholder="Введите ваше хобби">
+                    </div>
+                    
+                    <div class="error-message" id="errorMessage"></div>
+                    
+                    <div class="button-group">
+                        <button type="submit" class="btn save-btn">Сохранить</button>
+                        <button type="button" id="clearBtn" class="btn clear-btn">Очистить данные</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="display-section">
+                <h2>Информация о пользователе</h2>
+                <div class="info-card">
+                    <div class="info-item">
+                        <span class="info-label">Имя:</span>
+                        <span class="info-value" id="displayName">Не указано</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Возраст:</span>
+                        <span class="info-value" id="displayAge">Не указано</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Город:</span>
+                        <span class="info-value" id="displayCity">Не указано</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Хобби:</span>
+                        <span class="info-value" id="displayHobby">Не указано</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
+
